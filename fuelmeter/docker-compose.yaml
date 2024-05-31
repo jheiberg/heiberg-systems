@@ -20,7 +20,7 @@ services:
     container_name: fuelmeter
     build:
       context: .
-      dockerfile: app/Dockerfile
+      dockerfile: backend/Dockerfile
     ports:
       - "5000:5000"
     depends_on:
