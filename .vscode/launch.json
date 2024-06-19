@@ -5,6 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Firefox launch index.html",
+            "type": "firefox",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "pathMappings": [
+                {
+                    "url": "file:///home/jako/Development/heiberg-systems/fuelmeter/frontend/src",
+                    "path": "${workspaceFolder}/fuelmeter/frontend/src"
+                }
+            ]
+        },
+        {
             "name": "Python Debugger: Flask",
             "type": "debugpy",
             "request": "launch",

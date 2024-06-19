@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import keycloak from './keycloak';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const [authenticated, setAuthenticated] = useState(false);
+
+    useEffect(() => {
+        keycloak.init({ onLoad: 'login-required' }).then(authenticated => {
+            setAuthenticated(authenticated);
+        }).catch(error => {
+            console.error('Failed to initialize Keycloak', error);
+        });
+    }, []);
+
+    if (!authenticated) {
+        return <div>Loading...</div>;
+    }
+
+    return (
+        <div className="App">
+            <h1>Welcome to React</h1>
+        </div>
+    );
 }
 
 export default App;
