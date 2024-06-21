@@ -8,12 +8,9 @@ ENV WORKING_DIR=/home/fuelmeter
 
 WORKDIR ${WORKING_DIR}
 
-# Set working directory
-WORKDIR /app
-
-COPY app app
-COPY app/requirements.txt .
-COPY app/service_entrypoint.sh .
+COPY backend backend
+COPY backend/client_secrets.json .
+COPY backend/service_entrypoint.sh .
 
 RUN chmod +x service_entrypoint.sh
 
@@ -28,9 +25,9 @@ ENV PATH "$PATH:/home/${USERNAME}/.local/bin"
 
 # Install dependencies
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r backend/requirements.txt
 
-ENV FLASK_APP=app
+ENV FLASK_APP=backend
 
 # Expose port where Flask app runs (usually 5000)
 EXPOSE 5000

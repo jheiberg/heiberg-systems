@@ -8,7 +8,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:      
-      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB} -t 1"]
+      test: ["CMD-SHELL", "pg_isready -U heiberg -d fuelmeter -t 1"]
       interval: 10s
       timeout: 10s
       retries: 10
