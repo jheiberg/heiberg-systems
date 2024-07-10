@@ -4,9 +4,9 @@ from flask import Flask, jsonify
 from flask_oidc import OpenIDConnect
 from backend.modules import hello, goodbye, user, fuellog
 from backend.config import Config
-from flask_migrate import Migrate
 from backend.database import db
 from flask_cors import CORS
+from flask_migrate import Migrate
 
 oidc = OpenIDConnect()
 
@@ -19,10 +19,9 @@ def create_app():
     CORS(app, origins=["http://localhost:3000"])
 
     db.init_app(app)
+    migrate = Migrate(app, db)
     from backend.models.user import User
     from backend.models.fuellog import FuelLog
-
-    migrate = Migrate(app, db)
 
     app.register_blueprint(hello.blueprint)
     app.register_blueprint(goodbye.blueprint)

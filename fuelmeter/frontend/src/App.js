@@ -1,50 +1,45 @@
 import React, { useEffect, useState } from 'react';
 import keycloak from './keycloak';
 import axios from 'axios';
-import querystring from 'querystring';
+import { getAccessToken } from './authService';
 
 const App = () => {
     const [authenticated, setAuthenticated] = useState(false);
-    const [message, setMessage] = useState('');
+    const [apiData, setApiData] = useState('');
 
     useEffect(() => {
-        keycloak.init({ onLoad: 'login-required' }).then(auth => {
+        keycloak.init({ onLoad: 'login-required' }).then(async auth => {
             setAuthenticated(auth);
 
             if (auth) {
-                keycloak.loadUserProfile().then(profile => {
-                    console.log('User profile', profile);
-                });
+                await fetchProtectedData();
+            }
+        }).catch(error => {
+            console.error('Failed to initialize Keycloak', error);
+        });
 
-                axios.post('http://localhost:8080/realms/heiberg/protocol/openid-connect/token',
-                    querystring.stringify({
-                        grant_type: 'client_credentials', //gave the values directly for testing
-                        client_id: 'flask-api',
-                        client_secret: 'zdejNttWWYZz8fbawDdc5Y02tHlJdg73'
-                    }), {
-                    headers: {
-                        "Content-Type": "application/x-www-form-urlencoded"
-                    }
-                })
-                    .then(token => {
-                        axios.get('http://localhost:5000/fuel/logs', {
-                            headers: {
-                                'Authorization': `Bearer ${token.data.access_token}`
-                            }
-                        })
-                            .then(response => {
-                                setMessage(JSON.stringify(response.data));
-                            })
-                            .catch(error => {
-                                console.error('Failed to fetch protected resource', error);
-                            });
-                    })
-                    .catch(error => {
-                        console.error('Failed to fetch token', error);
-                    });
-            };
-        })
+        const interval = setInterval(() => {
+            keycloak.updateToken(30).catch(() => {
+                console.log('Failed to refresh token');
+            });
+        }, 30000);
+
+        return () => clearInterval(interval);
     }, []);
+
+    const fetchProtectedData = async () => {
+        try {
+            const token = await getAccessToken();
+            const response = await axios.get('http://localhost:5000/fuel/logs', {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+            setApiData(response.data);
+        } catch (error) {
+            console.error('Failed to fetch protected data', error);
+        }
+    }
 
     if (!authenticated) {
         return <div>Loading...</div>;
@@ -53,9 +48,14 @@ const App = () => {
     return (
         <div className="App">
             <h1>Welcome to React</h1>
-            <div>{message}</div>
+            {apiData && (
+                <div>
+                    <h2>Protected Data</h2>
+                    <pre>{JSON.stringify(apiData, null, 2)}</pre>
+                </div>
+            )}
         </div>
     );
 }
 
-export default App;
+    export default App;

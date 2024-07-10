@@ -1,10 +1,7 @@
 # encoding: utf-8
 
-
 from backend.database import db
 from backend.models.user import User
-from sqlalchemy import ForeignKeyConstraint
-
 
 class FuelLog(db.Model):
     timestamp = db.Column(db.DateTime(timezone=True), primary_key=True, default=db.func.now())
