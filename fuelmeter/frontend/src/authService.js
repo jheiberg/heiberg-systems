@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const keycloakUrl = process.env.REACT_APP_TOKEN_URL;
-const clientId = process.env.REACT_APP_CLIENT_ID;
-const clientSecret = process.env.REACT_APP_CLIENT_SECRET;
+const keycloakUrl = import.meta.env.VITE_TOKEN_URL;
+const clientId = import.meta.env.VITE_CLIENT_ID;
+const clientSecret = import.meta.env.VITE_CLIENT_SECRET;
 
 const getAccessToken = async () => {
     const params = new URLSearchParams();

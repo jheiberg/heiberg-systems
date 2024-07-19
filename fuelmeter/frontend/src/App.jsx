@@ -46,8 +46,14 @@ const App = () => {
     }
 
     return (
-        <div className="App">
-            <h1>Welcome to React</h1>
+        <div className="bg-bluegrey-200">
+            <header className='flex items-center h-16 w-auto p-5 bg-dark text-white'>
+                <div className='size-5 w-52'></div>
+                <div className='size-5 w-52'></div>
+                <div className='size-5 w-60'>
+                    <h1 className="font-serif text-3xl align-middle">Welcome to React</h1>
+                </div>
+            </header>
             {apiData && (
                 <div>
                     <h2>Protected Data</h2>
@@ -58,4 +64,4 @@ const App = () => {
     );
 }
 
-    export default App;
+export default App;
