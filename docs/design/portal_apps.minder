@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<minder version="1.14.0" parent-etag="1104777725" etag="3957731363">
+  <theme name="solarized_dark" label="Solarized Dark" index="0"/>
+  <styles>
+    <style level="0" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="10" nodepadding="10" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="1" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="2" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="3" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="4" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="5" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="6" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="7" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="8" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="9" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="10" isset="false" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+  </styles>
+  <drawarea x="0" y="0" scale="1"/>
+  <images/>
+  <nodes>
+    <node id="0" posx="449.75323486328125" posy="331.74383544921875" width="307" height="92" side="right" fold="false" treesize="132" layout="To right" group="false">
+      <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="300" nodeborderwidth="2" nodefill="true" nodemargin="8" nodepadding="6" nodefont="Courier Prime 11" nodemarkup="true"/>
+      <nodename posx="463.75323486328125" posy="345.74383544921875" maxwidth="300">
+        <text data="Create a Website Portal with links to different applications with the same style as the portal."/>
+      </nodename>
+      <nodenote></nodenote>
+      <nodes>
+        <node id="6" posx="856.75323486328125" posy="355.74383544921875" width="82" height="44" side="right" fold="false" treesize="132" color="#dc322f" colorroot="false" layout="To right" group="false">
+          <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="300" nodeborderwidth="2" nodefill="true" nodemargin="8" nodepadding="6" nodefont="Courier Prime 11" nodemarkup="true"/>
+          <nodename posx="870.75323486328125" posy="369.74383544921875" maxwidth="300">
+            <text data="Portal"/>
+          </nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="7" posx="1038.7532348632812" posy="311.74383544921875" width="208" height="44" side="right" fold="false" treesize="44" color="#dc322f" colorroot="false" layout="To right" group="false">
+              <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="300" nodeborderwidth="2" nodefill="true" nodemargin="8" nodepadding="6" nodefont="Courier Prime 11" nodemarkup="true"/>
+              <nodename posx="1052.7532348632812" posy="325.74383544921875" maxwidth="300">
+                <text data="Fuel Log Application"/>
+              </nodename>
+              <nodenote></nodenote>
+            </node>
+            <node id="8" posx="1038.7532348632812" posy="355.74383544921875" width="262" height="44" side="right" fold="false" treesize="44" color="#dc322f" colorroot="false" layout="To right" group="false">
+              <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="300" nodeborderwidth="2" nodefill="true" nodemargin="8" nodepadding="6" nodefont="Courier Prime 11" nodemarkup="true"/>
+              <nodename posx="1052.7532348632812" posy="369.74383544921875" maxwidth="300">
+                <text data="Grafana Linked Application"/>
+              </nodename>
+              <nodenote></nodenote>
+            </node>
+            <node id="9" posx="1038.7532348632812" posy="399.74383544921875" width="325" height="44" side="right" fold="false" treesize="44" color="#dc322f" colorroot="false" layout="To right" group="false">
+              <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="300" nodeborderwidth="2" nodefill="true" nodemargin="8" nodepadding="6" nodefont="Courier Prime 11" nodemarkup="true"/>
+              <nodename posx="1052.7532348632812" posy="413.74383544921875" maxwidth="300">
+                <text data="Interactive Graphical Application"/>
+              </nodename>
+              <nodenote></nodenote>
+            </node>
+          </nodes>
+        </node>
+      </nodes>
+    </node>
+  </nodes>
+  <groups/>
+  <stickers/>
+</minder>
